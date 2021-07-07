@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/29601563c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>plan day</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- nav -->
+      <nav id="nav">
+        <button class="button bar"><i class="fas fa-bars"></i></button>
+        <span class="nav__subject">Memo</span>
+        <button class="button bell"><i class="far fa-bell"></i></button>
+      </nav>
+      <!-- widget -->
+      <section id="widget">
+        <div class="date__day">
+          <span class="date">3.15</span>
+          <span class="day">monday</span>
+        </div>
+        <div class="weather">
+          <span><i class="fas fa-cloud-sun"></i></span>
+          <span class="temperate">20'C ~ 30'C</span>
+        </div>
+      </section>
+      <!-- curve styling -->
+      <div class="box" style="--r1: 160%; --r2: 68.15%"></div>
+      <!-- main box -->
+      <section id="main__container">
+        <!-- main__nav -->
+        <nav class="main__nav">
+          <i class="far fa-calendar-alt"></i>
+          <span class="plan"><strong>Add your plan</strong> </span>
+          <i class="far fa-trash-alt seleted"></i>
+        </nav>
+        <!-- main__contents -->
+        <ul class="main__contents"></ul>
+      </section>
+      <!-- button -->
+      <button class="button plus">
+        <i class="fas fa-plus"></i>
+      </button>
+      <!-- input -->
+      <form>
+        <input
+          type="text"
+          placeholder="당신의 plan을 입력하세요"
+          id="input"
+          size="50"
+          autocomplete="off"
+        />
+      </form>
+    </div>
+  </body>
+</html>
